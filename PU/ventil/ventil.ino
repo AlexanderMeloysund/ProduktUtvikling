@@ -1,11 +1,11 @@
 int in1 = 12;
 void setup() {
   pinMode(in1, OUTPUT);
-  digitalWrite(in1, HIGH);
 }
 void loop() {
-  digitalWrite(in1, LOW);
+  // 120 bpm
+  digitalWrite(in1, HIGH); // the solenoid closes
   delay(250);
-  digitalWrite(in1, HIGH);
+  digitalWrite(in1, LOW); // the solenoid opens
   delay(250);
 }
